@@ -1,0 +1,31 @@
+h1 {
+  color: #4F68C2;
+}
+strong {
+  color: yellow;
+}
+
+h3 {
+  color: #4F68C2;
+  padding-top: 15px
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* onPress link */
+a:active {
+  color: blue;
+}
