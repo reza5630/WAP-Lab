@@ -1,6 +1,6 @@
     body {
           background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
-        text-color: #404040;
+        text: #404040;
         font-size: 11pt;
         font-family: Georgia;
     }
@@ -24,9 +24,9 @@
    font-size: 18pt;
    }
 
-    h3 span {
+   h3 span {
           background-color: #F0F0F0;
-    }
+   }
    a {
      color: #A4A400;
    }
@@ -44,6 +44,9 @@
    }
 
 
-ul li {
-list-style-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");
-}
+    ul li {
+        list-style-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");
+    }
+    span.strike-through {
+        text-decoration: line-through;
+    }
