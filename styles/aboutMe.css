@@ -2,7 +2,7 @@ h1 {
   color: #4F68C2;
 }
 strong {
-  color: yellow;
+  color: #9b870c;
 }
 
 h3 {
@@ -28,4 +28,13 @@ a:hover {
 /* onPress link */
 a:active {
   color: blue;
+}
+
+p:first-letter {
+    font-family: Georgia;
+     font-size: 1.2em;
+ }
+
+dt {
+  color: #9b870c;
 }
