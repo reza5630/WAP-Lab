@@ -1,4 +1,4 @@
-<?php include("top.php"); ?>
+<?php include("top.html"); ?>
 
     <!-- CSE 190 M, Homework 4 (NerdLuv)
          This provided file is the front page that links to two of the files you are going
@@ -23,4 +23,4 @@
         </ul>
     </div>
 
-<?php include("bottom.php"); ?>
+<?php include("bottom.html"); ?>

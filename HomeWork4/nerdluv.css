@@ -105,3 +105,23 @@ footer {
 	font-size: x-small;
 	clear: both;
 }
+
+.signUpForm {
+    background: #E0E0FF;
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.sideNote {
+    color: red;
+}
+
+.signUpForm input[type=submit] {
+    background-color: hotpink;
+}
+
+label.attributes {
+    width: 200px;
+    display: inline-block;
+}
