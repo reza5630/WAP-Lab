@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<!-- CSE 190 M Homework 4 (NerdLuv) -->
+<!-- shared page top HTML -->
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Receive Grade</title>
+    <link href="grade.css" type="text/css" rel="stylesheet"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('input:checkbox').click(function() {
+                $('input:checkbox').not(this).prop('checked', false);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+<h1>Retrieve your Grade</h1>
+<form class="getGradeForm"  action="http://mumstudents.org/params.php" method="get">
+    <p><label class="attributes">Name: </label><input type="text" name="name"></p>
+    <p><label class="attributes">Student ID: </label><input type="text" name="name"></p>
+    <p><label class="attributes">Assignment Number: </label><select>
+        <option value="Assignment_1">Assignment 1</option>
+        <option value="Assignment_2">Assignment 2</option>
+        <option value="Assignment_3">Assignment 3</option>
+    </select>
+    <p><label class="attributes">Entry: </label><label><input type="radio" name="entry" value="Feb 19"> Feb 19</label>
+                                                <label><input type="radio" name="entry" value="May 19">May 19</label>
+                                                <label><input type="radio" name="entry" value="Aug 19">Aug 19</label>
+                                                <label><input type="radio" name="entry" value="Nov 19">Nov 19</label></p>
+    <p>
+    <label><input type="checkbox" name="consent" value="agree"> I consent that I am reviewing only my own grade.</label><br>
+    <label><input type="checkbox" name="consent" value="disagree" checked> I do not consent that I am reviewing only my own grade.</label><br>
+    </p>
+
+    <input  type="submit"   name="submit"   value="Get Grade"  class="getGradeButton">
+</form>
+</body>

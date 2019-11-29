@@ -1,0 +1,45 @@
+/*
+CSE 190 M, Homework 4: NerdLuv
+You should link to this provided stylesheet from all of your pages.
+You should not need to modify this file.  Your pages should work with it as-is.
+*/
+
+* {
+	font-size: 12pt;
+	font-family: "Verdana", "Geneva", sans-serif;
+}
+
+a {
+	color: #F44;
+	text-decoration: none;
+}
+
+body {
+	background-color: white;
+	padding-left: 1em;
+}
+
+footer {
+	font-size: x-small;
+	clear: both;
+}
+
+.getGradeForm {
+    background: #E0E0FF;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.sideNote {
+    color: red;
+}
+
+.getGradeForm input[type=submit] {
+    background-color: lightgrey;
+}
+
+label.attributes {
+	width: 200px;
+	display: inline-block;
+}

@@ -1,0 +1,53 @@
+    body {
+        background-image: url("images/background.png");
+        font-size: 8pt;
+        font-family: Tahoma;
+        margin: 0;
+        padding: 0;
+    }
+   .footer{
+       text-align: right;
+       bottom: 20px;
+       right: 20px;
+   }
+
+   .banner {
+       background-image: url("images/bannerbg.png");
+   }
+
+    h1.title {
+        text-align: center;
+        font-size: 24pt;
+        text-shadow: 3px 3px #999999;
+    }
+
+    .contentArea {
+        width: 800px;
+        position: center;
+        border-color: gray;
+        border-width: 4px;
+        border-radius: 20px;
+    }
+
+    .overview {
+        background-color: #A1B963;
+    }
+
+    .ratingAndComments {
+        width: 550px;
+    }
+    .ratingBanner {
+        background-image: url("images/rbg.png");
+        background-repeat: repeat-x;
+        border: 1px solid red;
+        height: 83px;
+    }
+
+    .rating {
+        font-size: 48pt;
+        color: red;
+        position: relative;
+        bottom: 15px;
+/*        margin-top: auto;
+        margin-bottom: auto;*/
+    }
