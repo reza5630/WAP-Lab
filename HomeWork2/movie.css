@@ -23,7 +23,6 @@
 
     .contentArea {
         width: 800px;
-        background-image: url("images/background.jpg");
         margin: auto;
         overflow: hidden;
         border-color: gray;
@@ -42,6 +41,7 @@
         background-color: #A2B964;
         font-family: Arial;
         font-size: 8pt;
+        padding-left: 2%;
     }
 
     dl {
@@ -64,7 +64,6 @@
     .ratingBanner {
         background-image: url("images/rbg.png");
         background-repeat: repeat-x;
-        border: 1px solid red;
         height: 83px;
     }
 
@@ -84,6 +83,19 @@
     }
 
     .column {
-        float: right;
+        float: left;
         width: 47%;
+        margin-left: 1%;
+        margin-right: 0;
+    }
+
+    .comment {
+        border-radius: 10px;
+        border: 2px solid gray;
+        background-color: #E8DC9B;
+        font-weight: bold;
+        font-style: normal;
+        padding: 8px;
+        width: 100%;
+        overflow: hidden;
     }

@@ -125,3 +125,7 @@ label.attributes {
     width: 200px;
     display: inline-block;
 }
+
+.footer{
+	text-align: left;
+}
