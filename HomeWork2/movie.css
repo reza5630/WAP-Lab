@@ -23,14 +23,39 @@
 
     .contentArea {
         width: 800px;
-        position: center;
+        background-image: url("images/background.jpg");
+        margin: auto;
+        overflow: hidden;
         border-color: gray;
         border-width: 4px;
+        border-style: solid;
         border-radius: 20px;
     }
 
+
+    .overViewAndCoverImage{
+        width: 250px;
+        margin-left: 10pt;
+        float: right;
+    }
     .overview {
-        background-color: #A1B963;
+        background-color: #A2B964;
+        font-family: Arial;
+        font-size: 8pt;
+    }
+
+    dl {
+        margin: 0;
+    }
+    dl dt {
+        font-weight: bold;
+    }
+
+    dl dd {
+        margin-bottom: 10pt;
+    }
+
+    .coverImage {
     }
 
     .ratingAndComments {
@@ -50,4 +75,15 @@
         bottom: 15px;
 /*        margin-top: auto;
         margin-bottom: auto;*/
+    }
+
+    .pageInfo {
+        clear: bottom;
+        text-align: center;
+        margin: 0;
+    }
+
+    .column {
+        float: right;
+        width: 47%;
     }
