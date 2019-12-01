@@ -82,6 +82,10 @@
         margin: 0;
     }
 
+    .comments {
+        overflow: hidden;
+    }
+
     .column {
         float: left;
         width: 47%;
