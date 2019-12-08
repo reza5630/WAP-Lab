@@ -11,13 +11,15 @@ window.onload = function () {
 function boxChecked() {
     alert("boxChecked!")
     if (document.getElementById("boxChecked").checked === true) {
+        document.body.style.backgroundImage = "url('http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')";
         document.getElementById("textbook").style.fontWeight = 'bold'
         document.getElementById("textbook").style.color = 'green'
         document.getElementById("textbook").style.textDecoration = 'underline'
-        document.body.style.backgroundImage = "url('http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')";
     } else {
-        document.getElementById("textbook").style.fontWeight = 'normal'
         document.body.style.backgroundImage = 'none'
+        document.getElementById("textbook").style.fontWeight = 'normal'
+        document.getElementById("textbook").style.color = 'black'
+        document.getElementById("textbook").style.textDecoration = 'none'
     }
 }
 
