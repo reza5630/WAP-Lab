@@ -37,8 +37,12 @@ function buttonClicked() {
 function stopThisMadness() {
     if (interval != null) {
         clearInterval(interval)
-        document.getElementById("textbook").style.fontSize = '14pt'
     }
+	document.getElementById("textbook").style.fontSize = '14pt'
+	document.getElementById("textbook").style.fontWeight = 'normal'
+    document.getElementById("textbook").style.color = 'black'
+    document.getElementById("textbook").style.textDecoration = 'none'
+	document.getElementById("textbook").value = "At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies."
 }
 
 
