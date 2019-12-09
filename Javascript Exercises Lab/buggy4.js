@@ -13,12 +13,12 @@ function handleError(evt) {
 function somethingElse() {
     if (5 > 2) {
         alert("Bigger");
-        if (5 < 2) {
+    }if (5 < 2) {
             alert("Smaller");
-        }
     }
+}
 
 
-    function gogogo() {
+function gogogo() {
         alert("Yay, it works!");
-    }
+}
