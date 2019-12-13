@@ -9,7 +9,7 @@ function delayMsg2() {
     }
 }
 
-var rubyTimer = (function () {
+var rudyTimer = (function () {
     if (timer == null) {
         timer = setInterval(rudy, 1000);
     } else {
