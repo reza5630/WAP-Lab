@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Quiz I</title>
+</head>
+<body>
+<h1>jQuery Quiz I</h1>
+<p style="color: red" >Q1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”?  </p>
+<p style="color: blue">A1. The jQuery function refers to the global jQuery function/object or the $ function depending on the context. jQuery object is
+    the object returned by the jQuery function that often represents a group of elements</p>
+<p style="color: red">Q2. Write jQuery code to find all h1 elements that are children of a div element and make their background color red. <br>
+<pre>
+    Sample HTML:
+    &lt;body&gt;
+    &lt;h1&gt; abc &lt;/h1&gt; &lt;br&gt; &lt;div&gt;
+    &lt;h1&gt; div-1 &lt;/h1&gt;
+    &lt;h1&gt; div-2 &lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;h1&gt; xyz &lt;/h1&gt;
+    &lt;/body&gt;
+</pre>
+<p style="color: blue">A2.</p>
+<pre>
+    $(document).ready(function(){
+         $("div h1").css("background-color","red");
+    });
+</pre>
+<p style="color: red">Q3.Use a jQuery method to insert the text "YES!" at the end of the &lt;p&gt; element.</p>
+<pre>
+   &lt;!DOCTYPE html&gt;
+   &lt;html&gt;
+   &lt;head&gt;
+   &lt;script&gt;
+   &lt;!—INSERT YOUR JQUERY CODE HERE - - &gt;
+   &lt;/script&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+   &lt;p&gt;Is jQuery FUN or what? &lt;/p&gt;
+   &lt;body&gt;
+   &lt;/html&gt;
+</pre>
+<p style="color: blue">A3.  </p>
+<pre>
+$(document).ready(function() {
+    $("p").append("YES!");
+});
+</pre>
+
+</body>
+</html>
