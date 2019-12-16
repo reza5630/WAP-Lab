@@ -1,3 +1,5 @@
+"use strict"
+
 //adding jQuery lib
 var script = document.createElement("script");
 script.type = "text/javascript";
