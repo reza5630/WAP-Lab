@@ -69,6 +69,7 @@ function checkOptions(piece){
         return true
     }
 
+    console.log(parseInt(piece.text())+" is not neighbour")
     return false
 
 }
