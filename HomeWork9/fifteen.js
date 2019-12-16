@@ -10,14 +10,13 @@ var coordinates = []
 var emptyPiece
 
 window.onload = function () {
-    init()
+    init();
     $("#shufflebutton").click(shuffle)
 }
 
 function shuffle() {
     console.log("shuffle clicked")
     coordinates.sort(() => Math.random() - 0.5);
-
     $(".puzzlepiece").each(function (i) {
         $(this).css("left", coordinates[i][0] + 'px')
         $(this).css("top", coordinates[i][1] + 'px')
@@ -58,21 +57,29 @@ function swapPiece(){
 }
 
 function checkOptions(piece){
+	let myJsBug = parseInt(piece.position().top)
 
-    if(
+	if(myJsBug%2) {
+		++myJsBug
+		console.log("js bug detected. new top value "+myJsBug)
+	}
+	if(
         ((parseInt(piece.position().left) == coordinates[15][0] - 100 ||
         parseInt(piece.position().left) == coordinates[15][0] + 100) &&
-        parseInt(piece.position().top) == coordinates[15][1]) ||
+		myJsBug == coordinates[15][1]) ||
 
-        ((parseInt(piece.position().top) == coordinates[15][1] - 100 ||
-        parseInt(piece.position().top) == coordinates[15][1] + 100) &&
+        ((myJsBug == coordinates[15][1] - 100 ||
+		myJsBug == coordinates[15][1] + 100) &&
         parseInt(piece.position().left) == coordinates[15][0]) ){
 
         return true
-    }
 
-    console.log(parseInt(piece.text())+" is not neighbour")
-    return false
+	}
+
+	console.log("empty left "+coordinates[15][0]+" empty top "+coordinates[15][1])
+	console.log("piece left "+parseInt(piece.position().left)+" piece top "+parseInt(piece.position().top))
+	console.log(parseInt(piece.text())+" is not neighbour")
+	return false
 
 }
 
