@@ -102,13 +102,3 @@ function init(){
     })
     coordinates.push([300, 300])
 }
-
-
-
-
-
-
-
-
-
-
